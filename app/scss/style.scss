@@ -1,0 +1,364 @@
+@import "global";
+@import "vars";
+@import "fonts";
+
+.header {
+  background-image: linear-gradient(rgba(31, 32, 33, 0.79), rgba(31, 32, 33, 0.79)),
+    url("../images/header/header-bgr.jpg");
+  color: #fff;
+  padding: 26px 0 60px 0;
+  max-height: 252px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.header__inner {
+  padding-top: 26px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  img {
+    // height: 68px;
+    // object-fit: contain;
+  }
+}
+.header__nav {
+  @include R18;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.header__nav-item {
+  display: inline-block;
+}
+.header__nav-item-link {
+}
+.header__tel-inner {
+  width: 100%;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header__tel-link {
+  @include B24;
+}
+.header__tel-subtitle {
+  @include R18;
+}
+.header__title {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  margin: 15px 0 0 0;
+}
+.select {
+  
+}
+.select__direction {
+  min-height: 97px;
+  display: flex;
+  align-items:center;
+  @include B18;
+  button{
+    position: relative;
+    border:none;
+    cursor: pointer;
+    background-color: transparent;
+    padding-right:20px;
+    img{
+    margin-left: 14px;
+    transform:translateY(2px);
+    }
+    &:active{
+      color:blue;
+    }
+  }
+}
+.select__direction-price-btn {
+  margin:0 50px;
+}
+.select__direction-age-btn {
+ 
+}
+.select__cards {
+  display: flex;
+  margin-left: -20px;
+  flex-wrap: wrap;
+
+}
+.select__card {
+  margin-left: 20px;
+  max-width: 380px;
+  width: calc(33.33% - 20px);
+margin-bottom: 25px;
+position: relative;
+}
+.mix {
+}
+.select__card-like-btn{
+  position: absolute;
+  top:35px;
+  right:30px;
+  z-index:10;
+  background: transparent;
+  border:none; 
+  appearance: none;
+  &:focus-visible,
+  &:active,
+  &:visited,
+// отрабатывал на мобильном
+  &:focus-within{
+  outline: none;
+}
+}
+button.select__card-like-btn.active{
+  svg{
+  fill-opacity: 1.0;
+}
+&::before{
+  content:"Добавлено в избранное";
+  position: absolute;
+  display: flex;
+  align-items:flex-end;
+  width: 200px;
+  height: 65px;
+  background-color:rgba(255,255,255, 1);
+  top:70%;
+  right: -10px;
+  clip-path: polygon(0% 100%, 0% 40%, 60% 40%, 81% 20%, 80% 40%, 100% 40%, 100% 100%);
+  animation: pick 4s alternate;
+  animation-iteration-count:1;
+  animation-fill-mode:none;
+  animation-timing-function: cubic-bezier(0.42,0,1,1);
+  opacity:0;
+}
+}
+@keyframes pick{
+  0% {opacity:0;}   
+  50% { opacity:1;}
+  100%{opacity:0;}
+}
+.select__card-discont{
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  position: absolute;
+  width: 78px;
+  height: 39px;
+  top: 37px;
+  left: 33px;
+  background-color: $accent;
+  position: absolute;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.select__card-img {
+  display: block;
+}
+.select__card-box {
+  background-color: $bgr;
+  display: flex;
+  flex-direction: column;
+  padding:29px;
+  max-width:100%;
+}
+.select__card-title {
+  @include B24;
+  margin-bottom: 20px;
+}
+.select__card-descriptions {
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+    @include R12;
+  span{
+    @include B16;
+    display: block;
+  }
+}
+.select__card-color {
+  @include R12;
+  position: relative;
+  width: 100%;
+  padding-left: 20px;
+  // display: flex;
+  // justify-content: flex-end;
+  &::before{
+    content:"";
+    position:absolute;
+    width: 4px;
+    height: 26px;
+    background-color: $blue;
+    left:0;
+  }
+}
+.select__card-age {
+  width: 100%;
+ 
+}
+.select__card-attribute {
+  width: 100%;
+}
+.select__card-price {
+  @include B24;
+}
+.select__card-status {
+  width: 380px;
+height: 65px;
+border-radius: 0 0 10px 10px;
+background-color:$blue;
+color:#fff;
+display: flex;
+align-items:center;
+justify-content:center;
+
+}
+.select__show-more {
+  display: block;
+  padding: 10px;
+ width: 380px;
+height: 65px;
+border: 1px solid #CACACA;
+border-radius: 10px;
+margin: 60px auto 80px;
+}
+
+// subscribe start
+.subscribe {
+  .container{
+    background-color: $black;
+    display:flex;
+    color:#fff;
+    padding:90px 0 85px 0;
+    justify-content: space-between;
+
+  }
+}
+.subscribe__text-wrap{
+  padding:0 80px;
+  max-width: 560px;
+  width: 100%;
+ 
+  // width: 100%;
+
+}
+.subscribe__text-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+
+}
+.subscribe__text {
+  max-width: 370px;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.subscribe__form {
+  display:flex;
+  max-width: 650px;
+  width: 100%;
+  align-items:center;
+  flex-wrap: wrap;
+  padding-right: 80px;
+  flex-shrink: 0;
+}
+.subscribe-form-input {
+  max-width: 300px;
+  min-height: 65px;
+  width: 100%;
+  @include R14;
+ border-radius: 10px;
+ margin-right: 15px;
+ border:none;
+ padding:0 10px;
+ &::placeholder{
+   color:$black;
+ }
+
+}
+.subscribe__form-btn {
+  max-width: 250px;
+  min-height: 65px;
+  width: 100%;
+  background-color: $blue;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17.07px;
+  color:#fff;
+  border-radius: 10px;
+  border:none;
+}
+input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  }
+   .subscribe__check label:before {
+        border-radius: 3px;
+    }
+    
+input[type=checkbox]+ label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+
+  }
+
+  input[type=checkbox]+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    margin-right: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  input[type=checkbox]:checked+label::before {
+    border-color: $blue;
+    background-color: $blue;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  }
+// subscribe end
+
+a.top__button {
+  height: 59px;
+  width: 59px;
+	opacity: 0;
+  background-color: $blue;
+  color: #fff;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+  cursor: pointer;
+	transition: all .3s ease-in-out;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  z-index:999;
+  span{
+    background-image: url('../images/header/top-arrow.svg');
+    display: block;
+    width: 18px;
+    height: 18px;
+
+  }
+ }

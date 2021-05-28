@@ -1,0 +1,37 @@
+$blue: #6ebbd3;
+$bgr: #f3f3f3;
+$accent: #e52d2d;
+$black: #1f2021;
+
+@mixin B24 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+@mixin B18 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+}
+@mixin B16 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+@mixin R18 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+}
+@mixin R14 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+@mixin R12 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+}
+

@@ -1,0 +1,51 @@
+html,
+body {
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+ }
+// пришиваем низ верстки к дну страницы
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  // не дает работать scroll
+  // height: 100%; 
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.content {
+  position: relative;
+  flex: 1 0 auto;
+}
+// тут обычно footer
+.subscribe {
+  flex: 0 0 auto;
+}
+//
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}

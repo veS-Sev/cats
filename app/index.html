@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+  <a href="#top" class="top__button" id="top__btn"><span></span></a>
+  <header class="header" id="top">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="header__logo"><img src="images/header/header-logo.svg" alt=""></a>
+        <nav class="header__nav">
+          <li class="header__nav-item"><a href="#" class="header__nav-item-link">Main</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-item-link">Gallery</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-item-link">News</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-item-link">Profile</a></li>
+        </nav>
+        <div class="header__tel-inner">
+          <a href="tel:544349000000" class="header__tel-link">+544 3490 00000</a>
+          <div class="header__tel-subtitle">Звони скорее!</div>
+        </div>
+      </div>
+      <h1 class="header__title">Найдено 349 котов</h1>
+    </div>
+  </header>
+  <section class="select">
+    <div class="container">
+      <div class="select__direction">Сортировать по:
+<!-- 
+        <button type="button" data-sort="order:asc">Ascending</button>
+        <button type="button" data-sort="order:descending">Descending</button> -->
+        <button class="select__direction-price-btn" type="button" data-sort="price-date:asc">Цене <img src="images/select/select-arrow.png" alt=""></button>
+        <button class="select__direction-age-btn" type="button" data-sort="age-date:asc">Возрасту <img src="images/select/select-arrow.png" alt=""></button>
+      </div>
+      <div class="select__cards">
+        <div class="select__card mix" data-order="1" data-price-date="30000" data-age-date="2">
+          <div class="select__card-discont">-40%</div>
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+           
+              </svg>
+          </button>
+          <img src="images/select/select-card-1.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>2 мес.</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price" >30000 руб.</div>
+          </div>
+          <div class="select__card-status">Купить</div>
+        </div>
+        <div class="select__card mix" data-order="2" data-price-date="40000" data-age-date="2">
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+            </svg>
+          </button>
+          <img src="images/select/select-card-2.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>2 мес.</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price" >40000 руб.</div>
+          </div>
+          <div class="select__card-status">Купить</div>
+        </div>
+        <div class="select__card mix" data-order="3"  data-price-date="20000" data-age-date="3">
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+                         </svg>
+          </button>
+          <img src="images/select/select-card-3.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>3 мес.</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price">20000 руб.</div>
+          </div>
+          <div class="select__card-status">Продан</div>
+        </div>
+        <div class="select__card mix" data-order="4"  data-price-date="25000" data-age-date="4">
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+           
+              </svg>
+          </button>
+          <img src="images/select/select-card-1.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>4 мес.</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price">25000 руб.</div>
+          </div>
+          <div class="select__card-status">Купить</div>
+        </div>
+        <div class="select__card mix" data-order="5"  data-price-date="30000" data-age-date="10">
+          <div class="select__card-discont">-40%</div>
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+           
+              </svg>
+          </button>
+          <img src="images/select/select-card-3.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>10 мес.</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price">30000 руб.</div>
+          </div>
+          <div class="select__card-status">Купить</div>
+        </div>
+        <div class="select__card mix" data-order="6" data-price-date="10000" data-age-date="12">
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+             </svg>
+          </button>
+          <img src="images/select/select-card-2.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>1 год</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price">10000 руб.</div>
+          </div>
+          <div class="select__card-status">Продан</div>
+        </div>
+        <div class="select__card mix" data-order="7" data-price-date="35000" data-age-date="7">
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+            </svg>
+          </button>
+          <img src="images/select/select-card-3.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>7 мес.</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price">35000 руб.</div>
+          </div>
+          <div class="select__card-status">Купить</div>
+        </div>
+        <div class="select__card mix" data-order="8" data-price-date="15000" data-age-date="3">
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+           
+              </svg>
+          </button>
+          <img src="images/select/select-card-1.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>3 мес.</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price">15000 руб.</div>
+          </div>
+          <div class="select__card-status">Продан</div>
+        </div>
+        <div class="select__card mix" data-order="9" data-price-date="20000" data-age-date="6">
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+           
+              </svg>
+          </button>
+          <img src="images/select/select-card-2.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>6 мес.</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price">20000 руб.</div>
+          </div>
+          <div class="select__card-status">Купить</div>
+        </div>
+        <div class="select__card mix" data-order="10" data-price-date="30000" data-age-date="2">
+          <button class="select__card-like-btn" type="button">
+            <svg class="select__card-like-svg" width="46" height="46" viewBox="0 0 46 46"  fill="none" xmlns="http://www.w3.org/2000/svg"  fill-opacity="0.5">
+             <path d="M33.7812 2.69531C31.2851 2.69531 28.9966 3.4863 26.9794 5.04634C25.0456 6.54197 23.758 8.44693 23 9.83214C22.242 8.44684 20.9544 6.54197 19.0206 5.04634C17.0034 3.4863 14.7149 2.69531 12.2188 2.69531C5.25298 2.69531 0 8.39293 0 15.9485C0 24.1112 6.55347 29.696 16.4746 38.1505C18.1593 39.5863 20.0689 41.2138 22.0538 42.9494C22.3154 43.1785 22.6514 43.3047 23 43.3047C23.3486 43.3047 23.6846 43.1785 23.9462 42.9495C25.9312 41.2136 27.8408 39.5862 29.5265 38.1496C39.4465 29.696 46 24.1112 46 15.9485C46 8.39293 40.747 2.69531 33.7812 2.69531Z" fill="white" />
+          </svg>
+          </button>
+          <img src="images/select/select-card-1.jpg" class="select__card-img">
+          <div class="select__card-box">
+            <h6 class="select__card-title">Кот полосатый</h6>
+            <div class="select__card-descriptions">
+              <div class="select__card-color">Коричневый окрас</div>
+              <div class="select__card-age"> <span>2 мес.</span> Возраст</div>
+              <div class="select__card-attribute"> <span>4</span>Кол-во лап</div>
+            </div>
+            <div class="select__card-price">30000 руб.</div>
+          </div>
+          <div class="select__card-status">Купить</div>
+        </div>
+
+      </div>
+      <button class="select__show-more">Показать еще 20</button>
+    </div>
+  </section>
+</div>
+
+  <section class="subscribe">
+    <div class="container">
+    <div class="subscribe__text-wrap">
+      <div class="subscribe__text-title">Успей купить!</div>
+      <div class="subscribe__text"> 
+        Подпишись и успей словить все акции
+      </div>
+    </div>
+    <form class="subscribe__form">
+      <input type="text" class="subscribe-form-input" placeholder="email">
+      <button
+        class="subscribe__form-btn">Подписаться</button>
+        <input class="subscribe__check"id="subscribe__check" type="checkbox" name="check" value="check2">
+
+    <label for="subscribe__check">Подписаться на новости</label>
+
+    </form>
+  </div>
+  </section>
+
+</div>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
