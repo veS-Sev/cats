@@ -47,7 +47,7 @@ let coord = document.documentElement.clientHeight;
 
 // Добавляем лайки
   function addLike() {
-    let buttons = document.getElementsByClassName('select__card-like-svg');
+    let buttons = document.querySelectorAll('.select__card-like-svg');
     for (key of buttons) {
          key.addEventListener('click', function (fn) {
         fn.target.closest('.select__card-like-btn').classList.toggle('active');
@@ -67,5 +67,14 @@ let coord = document.documentElement.clientHeight;
     })
   };
   addColor();
+
+  // burger-menu
+
+  let burgerMenu = document.querySelector('.header__burger-menu'),
+  header = document.querySelector('.header');
+
+  burgerMenu.onclick =()=> {
+    header.classList.toggle('active');
+  }
 
 });

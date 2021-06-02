@@ -11,18 +11,23 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <div class="content">
-  <a href="#top" class="top__button" id="top__btn"><span></span></a>
-  <header class="header" id="top">
+  <div class="wrapper"> 
+  <div class="content">
+    <a href="#top" class="top__button" id="top__btn"><span></span></a>
+   <header class="header" id="top">
     <div class="container">
       <div class="header__inner">
         <a href="#" class="header__logo"><img src="images/header/header-logo.svg" alt=""></a>
+        <div class="header__burger-menu">
+
+        </div>
         <nav class="header__nav">
+          <ul class="header__nav-list">
           <li class="header__nav-item"><a href="#" class="header__nav-item-link">Main</a></li>
-          <li class="header__nav-item"><a href="#" class="header__nav-item-link">Gallery</a></li>
+          <li class="header__nav-item"><a href="#" class="header__nav-item-link active">Gallery</a></li>
           <li class="header__nav-item"><a href="#" class="header__nav-item-link">News</a></li>
           <li class="header__nav-item"><a href="#" class="header__nav-item-link">Profile</a></li>
+        </ul>
         </nav>
         <div class="header__tel-inner">
           <a href="tel:544349000000" class="header__tel-link">+544 3490 00000</a>
@@ -35,7 +40,7 @@
   <section class="select">
     <div class="container">
       <div class="select__direction">Сортировать по:
-<!-- 
+<!-- для изменения кнопок сортировки
         <button type="button" data-sort="order:asc">Ascending</button>
         <button type="button" data-sort="order:descending">Descending</button> -->
         <button class="select__direction-price-btn" type="button" data-sort="price-date:asc">Цене <img src="images/select/select-arrow.png" alt=""></button>
@@ -60,7 +65,7 @@
             </div>
             <div class="select__card-price" >30000 руб.</div>
           </div>
-          <div class="select__card-status">Купить</div>
+          <button type="button" class="select__card-status">Купить</button>
         </div>
         <div class="select__card mix" data-order="2" data-price-date="40000" data-age-date="2">
           <button class="select__card-like-btn" type="button">
@@ -78,7 +83,7 @@
             </div>
             <div class="select__card-price" >40000 руб.</div>
           </div>
-          <div class="select__card-status">Купить</div>
+          <button type="button" class="select__card-status">Купить</button>
         </div>
         <div class="select__card mix" data-order="3"  data-price-date="20000" data-age-date="3">
           <button class="select__card-like-btn" type="button">
@@ -96,7 +101,7 @@
             </div>
             <div class="select__card-price">20000 руб.</div>
           </div>
-          <div class="select__card-status">Продан</div>
+          <button type="button" class="select__card-status">Продан</button>
         </div>
         <div class="select__card mix" data-order="4"  data-price-date="25000" data-age-date="4">
           <button class="select__card-like-btn" type="button">
@@ -115,7 +120,7 @@
             </div>
             <div class="select__card-price">25000 руб.</div>
           </div>
-          <div class="select__card-status">Купить</div>
+          <button type="button" class="select__card-status">Купить</button>
         </div>
         <div class="select__card mix" data-order="5"  data-price-date="30000" data-age-date="10">
           <div class="select__card-discont">-40%</div>
@@ -135,7 +140,7 @@
             </div>
             <div class="select__card-price">30000 руб.</div>
           </div>
-          <div class="select__card-status">Купить</div>
+          <button type="button" class="select__card-status">Продан</button>
         </div>
         <div class="select__card mix" data-order="6" data-price-date="10000" data-age-date="12">
           <button class="select__card-like-btn" type="button">
@@ -153,7 +158,7 @@
             </div>
             <div class="select__card-price">10000 руб.</div>
           </div>
-          <div class="select__card-status">Продан</div>
+          <button type="button" class="select__card-status">Продан</button>
         </div>
         <div class="select__card mix" data-order="7" data-price-date="35000" data-age-date="7">
           <button class="select__card-like-btn" type="button">
@@ -171,7 +176,7 @@
             </div>
             <div class="select__card-price">35000 руб.</div>
           </div>
-          <div class="select__card-status">Купить</div>
+          <button type="button" class="select__card-status">Купить</button>
         </div>
         <div class="select__card mix" data-order="8" data-price-date="15000" data-age-date="3">
           <button class="select__card-like-btn" type="button">
@@ -190,7 +195,7 @@
             </div>
             <div class="select__card-price">15000 руб.</div>
           </div>
-          <div class="select__card-status">Продан</div>
+          <button type="button" class="select__card-status">Продан</button>
         </div>
         <div class="select__card mix" data-order="9" data-price-date="20000" data-age-date="6">
           <button class="select__card-like-btn" type="button">
@@ -209,7 +214,7 @@
             </div>
             <div class="select__card-price">20000 руб.</div>
           </div>
-          <div class="select__card-status">Купить</div>
+          <button type="button" class="select__card-status">Купить</button>
         </div>
         <div class="select__card mix" data-order="10" data-price-date="30000" data-age-date="2">
           <button class="select__card-like-btn" type="button">
@@ -227,11 +232,10 @@
             </div>
             <div class="select__card-price">30000 руб.</div>
           </div>
-          <div class="select__card-status">Купить</div>
+          <button type="button" class="select__card-status">Купить</button>
         </div>
-
       </div>
-      <button class="select__show-more">Показать еще 20</button>
+      <button type="button" class="select__show-more">Показать еще 20</button>
     </div>
   </section>
 </div>
@@ -245,8 +249,8 @@
       </div>
     </div>
     <form class="subscribe__form">
-      <input type="text" class="subscribe-form-input" placeholder="email">
-      <button
+      <input type="email" class="subscribe-form-input" placeholder="Email"  name="email_user" required="required">
+       <button
         class="subscribe__form-btn">Подписаться</button>
         <input class="subscribe__check"id="subscribe__check" type="checkbox" name="check" value="check2">
 
@@ -254,7 +258,7 @@
 
     </form>
   </div>
-  </section>
+  </section> 
 
 </div>
   <script src="js/main.min.js"></script>

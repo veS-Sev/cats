@@ -34,4 +34,7 @@ $black: #1f2021;
   font-weight: 400;
   line-height: 15px;
 }
-
+ @mixin W100{
+  max-width: 100%;
+  width:100%;
+ }

@@ -17,6 +17,23 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+  &:active{
+    color:#6ebbd3;
+      }
+ }
+ button,
+ input{
+  border:none; 
+  &:focus-visible,
+  &:active,
+  &:visited,
+// отрабатывает на мобильном
+  &:focus-within{
+  outline: none;
+}
  }
 // пришиваем низ верстки к дну страницы
 * {
