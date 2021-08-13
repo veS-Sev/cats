@@ -1,10 +1,4 @@
 $(function () {
-
-  //   var mixer = mixitup(containerEl, {
-
-  //   });
-
-
   var mixer = mixitup('.select__cards');
 
   mixer.sort('price-date:asc')
@@ -34,8 +28,7 @@ let coord = document.documentElement.clientHeight;
     }
     if (scroll < coord) { 
       getOpacity(0);
-    
-    } }
+        } }
 
    function backToTop() { 
       if (window.pageYOffset > 0) {
